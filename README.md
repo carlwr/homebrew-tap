@@ -6,7 +6,11 @@
 
 ## In this tap
 
-TBD
+`posix-manpages`
+
+* _Manpages for `POSIX.1‐2017` shell utils, library functions and system headers_
+* readme: [docs/posix-manpages.md](docs/posix-manpages.md)
+* install command: `brew install carlwr/tap/posix-manpages`
 
 
 ## Repo layout
