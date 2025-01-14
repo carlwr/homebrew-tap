@@ -18,6 +18,7 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
         with:
           debug: true
+          token: ${{ secrets.HOMEBREW_ACTIONS_TOKEN }}
 
       - name: Cache Homebrew Bundler RubyGems
         uses: actions/cache@v4
