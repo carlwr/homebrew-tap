@@ -2,7 +2,19 @@
 
 ## How do I install these formulae?
 
-`brew install carlwr/tap/<formula>`
+```sh
+
+brew install carlwr/tap/posix-manpages
+
+brew install homebrew-tap/Formula/posix-manpages.rb
+
+brew install --formula --keep-tmp --verbose homebrew-tap/Formula/posix-manpages.rb
+
+
+
+# old - brew-generated
+
+```
 
 Or `brew tap carlwr/tap` and then `brew install <formula>`.
 

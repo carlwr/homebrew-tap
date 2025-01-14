@@ -13,8 +13,10 @@ class PosixManpages < Formula
   def install
     # Remove unrecognized options if they cause configure to fail
     # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
-    system "./configure", "--disable-silent-rules", *std_configure_args
+    # system "./configure", "--disable-silent-rules", *std_configure_args
     # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+
+    man1.install Dir['man1p/find.1p']
   end
 
   test do
@@ -28,5 +30,7 @@ class PosixManpages < Formula
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system bin/"program", "do", "something"`.
     system "false"
+
+
   end
 end
