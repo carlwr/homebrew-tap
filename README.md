@@ -1,6 +1,8 @@
 
 # `posix-manpages`
 
+[![brew test-bot](https://github.com/carlwr/homebrew-tap/actions/workflows/tests.yml/badge.svg)](https://github.com/carlwr/homebrew-tap/actions/workflows/tests.yml)
+
 ## Install
 
 ```sh
