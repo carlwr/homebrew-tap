@@ -1,30 +1,41 @@
-# Carlwr Tap
 
-## How do I install these formulae?
+# `posix-manpages`
+
+## Install
 
 ```sh
-
+# add the tap and install the formula:
 brew install carlwr/tap/posix-manpages
 
-brew install homebrew-tap/Formula/posix-manpages.rb
-
-brew install --formula --keep-tmp --verbose homebrew-tap/Formula/posix-manpages.rb
-
-
-
-# old - brew-generated
-
+# ...also include man pages for .h header files (section (0)):
+brew install --with-0p carlwr/tap/posix-manpages
 ```
 
-Or `brew tap carlwr/tap` and then `brew install <formula>`.
+Only man pages for section (1) are installed by default. To override, add any combination of the following CLI optionsrun to the `brew install` command:
+* `--with-0p`
+* `--without-1p`
+* `--with-3p`
 
-Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
+## Use
 
-```ruby
-tap "carlwr/tap"
-brew "<formula>"
+Man pages are installed with a `posix-` prefix. Example commands:
+```sh
+# view the POSIX man page for find(1):
+man posix-find
+
+# view the POSIX man page for assert.h:
+MANSECT=0 man posix-assert.h
 ```
 
-## Documentation
+## Misc. commands
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```sh
+# remove the tap:
+brew untap carlwr/tap
+
+# clone repo + install as a local formula:
+git clone https://github.com/carlwr/homebrew-tap
+cd homebrew-tap
+brew install --formula Formula/posix-manpages.rb
+```
+
