@@ -12,6 +12,12 @@
 * readme: [docs/posix-manpages.md](docs/posix-manpages.md)
 * install command: `brew install carlwr/tap/posix-manpages`
 
+`gnu-make-manual-manpage`
+
+* _The full GNU Make Manual as a man page (make-manual(7))_
+* readme: [docs/gnu-make-manual-manpage.md](docs/gnu-make-manual-manpage.md)
+* install command: `brew install carlwr/tap/gnu-make-manual-manpage`
+
 
 ## Repo layout
 
