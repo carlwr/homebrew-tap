@@ -18,6 +18,12 @@
 * readme: [docs/gnu-make-manual-manpage.md](docs/gnu-make-manual-manpage.md)
 * install command: `brew install carlwr/tap/gnu-make-manual-manpage`
 
+`makewash`
+
+* _Make `make` make less unbearable output_
+* repo: [carlwr/makewash](https://github.com/carlwr/makewash)
+* install command: `brew install carlwr/tap/makewash`
+
 
 ## Repo layout
 
